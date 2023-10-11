@@ -50,9 +50,7 @@ public class Main {
                         break;
                     }
 
-
-
-
+                    novaL.autor = novaA;
 
                     listaL.add(novaL);
 
@@ -65,7 +63,7 @@ public class Main {
                             System.out.println("Título: " + cadaL.titulo);
                             System.out.println("Autor e Local de Nascimento: " + cadaL.autor.nome + ", " + cadaL.autor.localNasc);
                             System.out.println("Preço: " + cadaL.preco);
-                            System.out.println("Data de lançamento: " +cadaL.dataLancamento);
+                            System.out.println("Data de lançamento: " +cadaL.dataLancamento.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
 
                         }
 
